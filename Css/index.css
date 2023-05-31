@@ -162,10 +162,27 @@ small {
 .small-container .col-3 {
   text-align: center;
   padding: 40px 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
 .small-container .col-3 img {
   width: 50px;
   margin-top: 20px;
   border-radius: 50%;
+}
+
+.small-container .col-3:hover{
+  transform: translate(-10px);
+}
+.fa.fa-quote-left{
+  font-size: 34px;
+  color: #ff523b;
+}
+
+.col-3 p {
+  font-size:12px;
+  margin:12px 0;
+  color: #777;
 }
