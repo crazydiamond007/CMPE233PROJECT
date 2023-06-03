@@ -7,9 +7,11 @@
 body {
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .header {
   background: radial-gradient(#fff, pink);
 }
+
 .header .row {
   margin-top: 70px;
 }
@@ -37,11 +39,11 @@ nav ul li {
 
 a {
   text-decoration: none;
-  color: #555;
+  color: #161616;
 }
 
 p {
-  color: #555;
+  color: #0a0a0a;
 }
 
 .container {
@@ -146,7 +148,7 @@ h4 {
 }
 
 .offer {
-  background: radial-gradient(#fff, #ffd6d6);
+  background: radial-gradient(#fff, pink);
   margin-top: 80px;
   padding: 30px 0;
 }
@@ -173,16 +175,93 @@ small {
   border-radius: 50%;
 }
 
-.small-container .col-3:hover{
+.small-container .col-3:hover {
   transform: translate(-10px);
 }
-.fa.fa-quote-left{
+.fa.fa-quote-left {
   font-size: 34px;
   color: #ff523b;
 }
 
 .col-3 p {
-  font-size:12px;
-  margin:12px 0;
+  font-size: 12px;
+  margin: 12px 0;
   color: #777;
+}
+
+.small-container .col-3 h3 {
+  font-weight: 600;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Add the following CSS styles */
+
+/* Featured Products section */
+.petite .col-4 {
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.petite .col-4:hover {
+  transform: translateY(-5px);
+}
+
+.petite .col-4 img {
+  width: 100%;
+}
+
+.petite .col-4 h4 {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.petite .col-4 p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.petite .col-4 button {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  border: none;
+  background-color: #ff523b;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.petite .col-4 button:hover {
+  background-color: #ff2d00;
+}
+
+/* Latest Products section */
+.petite h2 {
+  margin-bottom: 20px;
+}
+
+.petite .row:last-child .col-4 {
+  margin-bottom: 0;
+}
+
+.photo {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.photo:hover {
+  transform: scale(1.05);
 }
