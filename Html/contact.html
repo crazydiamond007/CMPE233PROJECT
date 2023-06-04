@@ -12,7 +12,9 @@
       <div class="contain">
         <div class="navbar">
           <div class="logo">
-            <a href="/Html/index.html"><p>Narce && Josh&#8472;</p></a>
+            <a href="/Html/index.html" class="logo"
+              ><p>Narce && Josh&#8472;</p></a
+            >
           </div>
           <nav>
             <ul>
@@ -24,51 +26,50 @@
         </div>
       </div>
     </div>
-    <div class="contact-section">
-      <div class="container">
-        <h2>Contact Us</h2>
+    <hr />
+    <div class="contact-us">
+      <h2 id="contact">Contact Us</h2>
+      <form action="process_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required /><br /><br />
 
-        <div class="form-group">
-          <label for="name">First Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your First Name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="lastname">Last Name</label>
-          <input
-            type="text"
-            id="lastname"
-            name="lastname"
-            placeholder="Your Last Name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="comments">Comments</label>
-          <textarea
-            id="comments"
-            name="comments"
-            placeholder="Your Comments"
-            required
-          ></textarea>
-        </div>
-        <button class="renderer" onclick="getThank()">Submit</button>
-      </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br /><br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required /><br /><br />
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required /><br /><br />
+
+        <label for="message">Message:</label><br />
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          cols="30"
+          required
+        ></textarea
+        ><br /><br />
+        <label for="contact-method">Preferred Contact Method:</label>
+        <select id="contact-method" name="contact-method">
+          <option value="email">Email</option>
+          <option value="phone">Phone</option></select
+        ><br /><br />
+
+        <label for="hear-about">How did you hear about us?</label>
+        <select id="hear-about" name="hear-about">
+          <option value="website">Website</option>
+          <option value="social-media">Social Media</option>
+          <option value="referral">Referral</option>
+          <option value="other">Other</option></select
+        ><br /><br />
+
+        <label for="robot">Please verify that you are not a robot:</label>
+        <input type="checkbox" id="robot" name="robot" required /><br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
     </div>
     <script src="/Js/contact.js"></script>
   </body>

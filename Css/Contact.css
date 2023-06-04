@@ -8,6 +8,10 @@ body {
   font-family: "Source Sans Pro", sans-serif;
 }
 
+.logo {
+  margin-bottom: 20px;
+}
+
 .header {
   background: radial-gradient(#fff, pink);
 }
@@ -42,85 +46,67 @@ a {
   color: #161616;
 }
 
-.contact-section {
-  margin-top: 20px;
+h2 {
   margin-bottom: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
   text-align: center;
 }
 
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #f0f0f0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+hr {
+  margin-bottom: 100px;
 }
 
-.container h2 {
+.contact-us {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #eec9c9;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: auto;
+  margin-bottom: 100px;
+}
+
+.contact-us h2#contact {
   text-align: center;
   margin-bottom: 20px;
-  position: relative;
-  line-height: 60px;
 }
 
-.container h2::after {
-  content: "";
-  background: #ff523b;
-  width: 20px;
-  height: 5px;
-  border-radius: 5px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.form-group {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.form-group label {
+.contact-us label {
   display: block;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.form-group input,
-.form-group textarea {
+.contact-us input,
+.contact-us textarea,
+.contact-us select {
   width: 100%;
   padding: 10px;
+  margin-bottom: 15px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease-in-out;
+  border-radius: 3px;
+  font-family: Arial, sans-serif;
 }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #888;
-}
-
-button[type="submit"] {
-  display: block;
-  width: 100%;
-  padding: 15px; /* Increased padding */
-  font-size: 16px; /* Increased font size */
-  background-color: #4caf50;
-  color: #fff;
+.contact-us input[type="submit"] {
+  background-color: orange;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
   border: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  border-radius: 3px;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
-button[type="submit"]:hover {
-  background-color: #45a049;
-  transform: scale(1.05);
+.contact-us input[type="submit"]:hover {
+  background-color: rgb(190, 126, 15);
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-button[type="submit"]:focus {
-  outline: none;
+.contact-us textarea {
+  resize: vertical;
 }

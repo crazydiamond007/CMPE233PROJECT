@@ -9,13 +9,15 @@ body {
 }
 
 .header {
-  background: radial-gradient(#fff, pink);
+  background: radial-gradient(#e8baba, pink);
 }
 
 .header .row {
   margin-top: 70px;
 }
-
+#logo {
+  margin-right: 100px;
+}
 .navbar {
   display: flex;
   align-items: center;
@@ -40,6 +42,7 @@ nav ul li {
 a {
   text-decoration: none;
   color: #161616;
+  width: 10;
 }
 
 h2 {
